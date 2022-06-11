@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  ClearFix  */
+
+.group:before,
+.group:after{
+  content: "";
+  display: table;
+}
+
+.group:after{
+  clear: both;
+}
+
+.group{
+  clear:both;
+  *zoom: 1;
+}
+
+/*   Grid Styles   */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid,
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid {
+  /*border: 1px solid red;*/
+  padding: 50px 15px 5px 15px;
+}
+
+.col-1-3 {
+  width: 33.3%;
+  /*border: 1px solid #ff00ff;*/
+}
+
+.col-1-2 {
+  width: 50%;
+  /*border: 1px solid #ff00ff;*/
+}
+
+.col-1-4 {
+  width: 25%;
+  /*border: 1px solid #ff00ff;*/
+}
+
+.col-1-3,
+.col-1-2,
+.col-1-4 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 400px;
+}
+
+
+.row {
+  width: 100%;
+  padding: 50px auto;
+  /*border: 1px solid #000;*/
+}
+
+/*   Navigation   */
+
+
+.nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav img {
+  width: 90px;
+  height: 30px;
+}
+
+.sign-in {
+  padding-right: 100px;
+  background: url("images/bbc-icon.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.more {
+  background: url("images/down-arrow.png") 100% 50% no-repeat; 
+  padding-right: 100px;
+  list-style-type: none;
+}
+
+/*   Primary Header   */
+
+.primary-nav li {
+  border-left: 1px solid #a9a9a9;
+  padding: 10px 17px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  background: #000;
+  color: #fff;
+  height: 50px;
+}
+
+.primary-nav li:first-child {
+  border-left: 0;
+}
+
+.search {
+  height: 30px;
+}
+
+.primary-header {
+  background: #000;
+  border: 1px solid #a9a9a9;
+}
+
+/*   Links   */
+
+.primary-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*   Typography   */
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #808080;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/*   News Images   */
+
+.bg-image {
+  position: relative;
+}
+
+.bg-image .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(80%);
+}
+
+.bg-image h2 {
+  color:#fff;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.bg-image h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.news-img p,
+.bg-image p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bg-image p{
+  color: #c0c0c0;
+}
+
+.news-img p {
+  color: #000;
+}
+
+.news-img h4,
+.bg-image h4 {
+    color: #c0c0c0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-left: 3px solid red;
+    padding-left: 10px;
+}
+
+.photo-1-3,
+.photos {
+    width: 100%;
+    margin-bottom: 10px;
+    filter: brightness(80%);
+}
+
+.photos {
+  height: 194px;
+}
+
+.photo-1-3 {
+  height: 220px;
+}
+
+.date {
+  text-align: right;
+  color:#808080;
+  font-size: 25px;
+}
+
+.news {
+  border-left: 5px solid red;
+  text-transform: capitalize;
+  padding-left: 15px;
+  font-size: 36px;
+  color: #808080;
+  font-weight: 600;
+}
+
+.news-img h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.first {
+  padding-left: 0;
+}
+
+.last {
+  padding-right: 0;
+}
+
+/*   Search field   */
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
